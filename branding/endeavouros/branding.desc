@@ -108,7 +108,7 @@ images:
 
 # The slideshow is displayed during execution steps (e.g. when the
 # installer is actually writing to disk and doing other slow things).
-slideshow:               "show.qml"
+# slideshow:               "show.qml"
 # There are two available APIs for the slideshow:
 #  - 1 (the default) loads the entire slideshow when the installation-
 #      slideshow page is shown and starts the QML then. The QML
@@ -118,7 +118,8 @@ slideshow:               "show.qml"
 #      onLeave() in the root object. After the installation is done,
 #      the show is stopped (first by calling onLeave(), then destroying
 #      the QML components).
-slideshowAPI: 2
+slideshow:               "samegame.qml"
+slideshowAPI:            1
 
 
 # Colors for text and background components.
